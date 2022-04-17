@@ -1,0 +1,12 @@
+version: '3.0'
+
+services:
+  db:
+    image: mongo:5
+    ports: 
+     - 27018:27017
+    volumes:
+      - db:/data/db
+  
+volumes:
+  db:

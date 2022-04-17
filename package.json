@@ -1,0 +1,45 @@
+{
+  "name": "dwarves-assignment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/bcrypt": "^5.0.0",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^27.4.1",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/lodash": "^4.14.181",
+    "@types/morgan": "^1.9.3",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
+    "@typescript-eslint/parser": "^5.18.0",
+    "babel-jest": "^27.5.1",
+    "eslint": "^8.12.0",
+    "eslint-plugin-import": "^2.26.0",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.2"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.2.10",
+    "morgan": "^1.10.0",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  },
+  "scripts": {
+    "prestart": "yarn tsc",
+    "start": "NODE_ENV=production && node build/index.js",
+    "dev": "nodemon",
+    "test": "jest --passWithNoTests --verbose",
+    "test:e2e": "jest --config ./e2e/jest.config.json --detectOpenHandles --watchAll --runInBand --verbose"
+  }
+}
