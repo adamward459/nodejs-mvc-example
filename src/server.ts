@@ -10,6 +10,9 @@ import routes from './routes';
 
 export const app = express();
 
+app.set('view engine', 'ejs');
+app.set('views', './src/views');
+
 app.use(express.json());
 morgan.token('body', (req: Request) => JSON.stringify(req.body));
 app.use(

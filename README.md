@@ -34,6 +34,7 @@ Full features including e2e test, unit test and more
 │   ├── server.ts
 │   ├── services
 │   └── types
+│   └── views
 ├── tsconfig.json
 └── yarn.lock
 ```
@@ -41,6 +42,7 @@ Full features including e2e test, unit test and more
 - `controllers`: codes for handling validation data
 - `services`: codes for handling main logic
 - `models`: codes mapping model in mongoDb and code
+- `views`: codes for rendering views
 
 ## Set up development environment
 
